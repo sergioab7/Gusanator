@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+#coding: utf-8
+
+#Autor: xaxxjs
+
+
 from colorama import Fore, Back, Style
 import sys
 import os
@@ -5,6 +11,11 @@ import shutil
 import signal
 import time
 from subprocess import call
+
+if(os.getuid() != 0):
+    print(Fore.RED + "[!] Debes tener privilegios root para este script!"+Fore.RESET)
+    sys.exit(1)
+
 
 os.system("clear")
 
@@ -29,6 +40,9 @@ def help():
         VERSION               Last version
         ABOUT                 Information about program
         HELP                  List of commands
+
+        CLEAR                 Clear the screen
+        EXIT                  Exit
 
         """)
 
@@ -211,7 +225,7 @@ def create():
             break
         else:
             print("[-]Command not found")
-dibujo="""
+banner="""
                                 -  /
                                (o)(o)
                               /      |
@@ -226,7 +240,7 @@ dibujo="""
 
 """
 
-print(dibujo)
+print(banner)
 print("\tWelcome to gusanator, write <help> to more info.\n\n")
 
 while True:
@@ -241,6 +255,11 @@ while True:
             version()
         elif(datos=="create"):
             create()
+        elif(datos=="clear"):
+            os.system("clear")
+            print(banner)
+        elif(datos=="exit"):
+            sys.exit(1)
         else:
             print(Fore.YELLOW+"[-]"+Fore.RESET+"Command not found.")
     except Exception as e:
