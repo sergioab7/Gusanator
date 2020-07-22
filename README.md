@@ -52,7 +52,7 @@ Al ejecutarlo nos aparecerá algo asi:
         style="float: left; margin-right: 10px;" />
 </p>
 
-PRIMERA OPCION
+PRIMERA OPCIÓN
 ======
 
 La primera opión es para ejecutar un sencillo gusano en el cual UNICAMENTE afectará a la ruta actual.
@@ -110,7 +110,7 @@ Escribes el nombre del directorio, te pedirá el numero de veces que quieras que
         style="float: left; margin-right: 10px;" />
 </p>
 
-SEGUNDA OPCION
+SEGUNDA OPCIÓN
 ======
 
 La <b>segunda opción</b> es la más interesante de todas, depende de tu directorio actual te crea múltiples de carpetas en todas las carpetas que encuentre
