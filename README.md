@@ -10,7 +10,7 @@
 <b>GUSANATOR</b> se trata de un programa que emula a un "gusano informático" (malware), creación de múltiples directorios y/o archivos en la ruta que tu elijas.
 Ademas, puedes añadirle la extensión que prefieras en los archivos y también puedes añadir textos dentro de cada uno de los archivos.
 
-**SO**
+**SISTEMA OPERATIVO**
 
 Actualmente solo es funcional en Linux
 
